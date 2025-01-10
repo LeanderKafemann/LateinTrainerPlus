@@ -1,0 +1,17 @@
+{
+  "lang": "de-de",
+  "name": "LateinTrainerPlus",
+  "short_name": "LTP",
+  "description": "Zusatzfunktionen für den LateinTrainer",
+  "orientation": "portrait-primary",
+  "start_url": "https://leanderkafemann.github.io/LateinTrainerPlus/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./images/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
+  
