@@ -39,12 +39,28 @@
     </div>
     <img src="./images/logo.png" alt="logo" style="position: absolute; margin-top: 10px;" />
     <h1 style="font-size: 48px;" id="home"><u>LateinTrainerPlus</u></h1>
+    <h2>Account</h2>
+    <div class="oval">
+        <p>
+            Hallo, <div id="name__" style="display:inline;">?</div>!<br />
+            Du bist eingeloggt mit dem Code <div id="code__" style="display:inline;" class="vHover">?</div>!<br /><br />
+            <button onclick="changeLoginButton()" type="button" class="login_button">&Auml;ndern</button><br />
+            <div id="text__" style="display: inline;"></div><br />
+        </p>
+    </div>
+    <script>
+        document.getElementById("name__").textContent = getCookie("username", document.cookie);
+        document.getElementById("code__").textContent = getCookie("code", document.cookie);
+        if (getCookie("username", document.cookie) == "NoNameGiven") {
+            document.getElementById("text__").textContent = "Sie sind nicht eingeloggt!";
+        }
+    </script>
     <h2>Coming soon...</h2>
     <div class="oval">
         <font color="black">
             <h3>Upcoming LTP</h3>
             <p>
-                LateinTrainerPlus ist momentan in Arbeit.<br/>
+                LateinTrainerPlus ist momentan in Arbeit.<br />
                 Kommen Sie später zurück.
             </p>
         </font>
