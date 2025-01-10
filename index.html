@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de-de">
+<!--
+    Dieser Code wurde exklusiv und allein von Leander Kafemann entwickelt.
+    Die Verwendung von Style- und Manifestdateien ist erlaubt,
+    nicht jedoch die von Pythonskripten oder HTML-Dateien.
+-->
+<head>
+    <title>LateinTrainerPlus</title>
+    <meta name="author" content="Leander Kafemann" />
+    <meta name="keywords" content="Leander Kafemann Latein LateinTrainer LateinTrainerPlus LKunited King Lele" />
+    <link rel="stylesheet" href="https://leanderkafemann.github.io/bueroWebsite/styling/style.css" />
+    <link rel="stylesheet" href="https://leanderkafemann.github.io/bueroWebsite/styling/box.css" />
+    <link rel="stylesheet" href="https://leanderkafemann.github.io/bueroWebsite/styling/like.css" />
+    <link rel="stylesheet" href="https://leanderkafemann.github.io/bueroWebsite/styling/forms.css" />
+    <!--
+    <link rel="manifest" href="./manifest.json" />
+        -->
+    <script type="text/javascript" src="https://leanderkafemann.github.io/bueroWebsite/js/cookies.js"></script>
+    <script type="text/javascript" src="https://leanderkafemann.github.io/bueroWebsite/js/login.js"></script>
+    <script type="text/javascript" src="https://leanderkafemann.github.io/bueroWebsite/js/get_like.js"></script>
+    <script type="text/javascript" src="https://leanderkafemann.github.io/bueroWebsite/js/set_like.js"></script>
+    <script type="text/javascript" src="https://leanderkafemann.github.io/bueroWebsite/js/comment.js"></script>
+    <script type="text/javascript" src="https://leanderkafemann.github.io/bueroWebsite/js/time.js"></script>
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="7B0CF-ClfZaLgOrvs32NkRIFktgrLNCGxIwQPBNUqBs" />
+</head>
+<body>
+    <div class="navbar">
+        <a href="#"></a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#weblinks">Weblinks</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+    <img src="./images/logo.png" alt="logo" style="position: absolute; margin-top: 10px;" />
+    <h1 style="font-size: 48px;" id="home"><u>LateinTrainerPlus</u></h1>
+    <h2>Coming soon...</h2>
+    <div class="oval">
+        <font color="black">
+            <h3>Upcoming LTP</h3>
+            <p>
+                LateinTrainerPlus ist momentan in Arbeit.<br/>
+                Kommen Sie später zurück.
+            </p>
+        </font>
+        <div class="like" id="upcomingltp" style="">?</div><button onclick="setLike('upcomingltp')" type="button" class="likeButton">&#128151;</button>
+        <div id="upcomingltpComments"></div>
+        <textarea id="upcomingltpCommentText" placeholder="Kommentieren..."></textarea><br />
+        <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('upcomingltp')" />
+        <script>
+            getContent("upcomingltp");
+        </script>
+    </div>
+    <div class="footer" id="footer" style="text-align: center;">
+        <p class="footerText">
+            Copyright Leander Kafemann 2025 - BueroWebKit 3.2.16 - LKWEB 2.13.13 - LateinTrainerPlus 1.0.0
+        </p>
+    </div>
+</body>
+</html>
