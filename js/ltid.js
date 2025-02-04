@@ -8,12 +8,13 @@ function changeLTID() {
 
 async function changeLTIDBackground(newid) {
     let response = await fetch("https://lkunited.pythonanywhere.com/ltp/setConnectedID?name="+getCookie("username", document.cookie)+"&code="+getCookie("code", document.cookie)+"&newid="+newid);
-    alert("Änderung von Server beantwortet mit:"+response.text());
+    let text = await response.text();
+    alert("Änderung von Server beantwortet mit:"+text);
 }
 
 async function getLTID() {
     let response = await fetch("https://lkunited.pythonanywhere.com/ltp/getConnectedID?name="+getCookie("username", document.cookie)+"&code="+getCookie("code", document.cookie));
-    let text = response.text()
+    let text = await response.text();
     if (text != "Authentification failed") {
         document.getElementById("ltid__").textContent = text;
         setCookie("ltid", text, 7);
