@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://leanderkafemann.github.io/bueroWebsite/styling/box.css" />
     <link rel="stylesheet" href="https://leanderkafemann.github.io/bueroWebsite/styling/like.css" />
     <link rel="stylesheet" href="https://leanderkafemann.github.io/bueroWebsite/styling/forms.css" />
+    <link rel="stylesheet" href="./styling/fdata.css" />
     <link rel="manifest" href="./manifest.json" />
     <script type="text/javascript" src="https://leanderkafemann.github.io/bueroWebsite/js/cookies.js"></script>
     <script type="text/javascript" src="https://leanderkafemann.github.io/bueroWebsite/js/login.js"></script>
@@ -83,7 +84,8 @@
                     LateinTrainerPlus ist da!<br />
                     <br />
                     Genießen Sie erste Funktionen,<br />
-                    während wir an weiteren Funktionen wie Ranglisten arbeiten.
+                    während wir an weiteren Funktionen wie Ranglisten arbeiten.<br/><br/>
+                    Beachten Sie, dass Sie den DesktopAgenten ben&ouml;tigen (s. B&uuml;ro-der Guide).
                 </b>
             </p>
         </font>
@@ -94,11 +96,9 @@
         <script>getContent("ltpistda");</script>
     </div>
     <h2 id="daten">Meine Daten</h2>
-    <p style="font-weight: bold; font-size: larger; text-align: center">
-        Name: <div id="ltname__" style="display: inline;">?</div><br/>
-        Punkte: <div id="ltpunkte__" style="display: inline;">?</div><br/>
-        Streak: <div id="ltstreak__" style="display: inline;">?</div>
-    </p>
+    <div class="dataview">Name: </div><div id="ltname__" class="dataview">?</div><br/>
+    <div class="dataview">Punkte: </div><div id="ltpunkte__" class="dataview">?</div><br/>
+    <div class="dataview">Streak: </div><div id="ltstreak__" class="dataview">?</div>
     <script>
         if (getCookie("username", document.cookie) != "NoNameGiven") {
             getScores();
@@ -166,7 +166,7 @@
     <br /><br /><br /><br />
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2025 - BueroWebKit 3.2.22 - LKWEB 2.14.0 - LateinTrainerPlus 1.0.1
+            Copyright Leander Kafemann 2025 - BueroWebKit 3.2.22 - LKWEB 2.14.0 - LateinTrainerPlus 1.0.2
         </p>
     </div>
 </body>
