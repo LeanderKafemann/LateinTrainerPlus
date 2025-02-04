@@ -110,9 +110,15 @@
         }
     </script>
     <h2 id="rangliste">Rangliste</h2>
-    <p>
-        Upcoming...
-    </p>
+    <h3>Nach Punkten</h3>
+    <div style="text-align: center;" id="rListP"></div><br/><br/>
+    <h3>Nach Streak</h3>
+    <div style="text-align: center;" id="rListS"></div>
+    <script>
+        if (getCookie("username", document.cookie) != "NoNameGiven") {
+            getRL();
+        }
+    </script>
     <div style="display: block;">
         <h2 id="weblinks">Weblinks</h2>
         <p>
@@ -171,7 +177,7 @@
     <br /><br /><br /><br />
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2025 - BueroWebKit 3.2.22 - LKWEB 2.14.1 - LateinTrainerPlus 1.0.4
+            Copyright Leander Kafemann 2025 - BueroWebKit 3.2.22 - LKWEB 2.14.2 - LateinTrainerPlus 1.1.0
         </p>
     </div>
 </body>
