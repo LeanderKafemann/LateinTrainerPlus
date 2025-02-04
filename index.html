@@ -31,6 +31,8 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
+                <li><a href="#daten">Meine Daten</a></li>
+                <li><a href="#rangliste">Rangliste</a></li>
                 <li><a href="#weblinks">Weblinks</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
@@ -59,7 +61,8 @@
         <h4>LateinTrainer-Account</h4>
         <p>
             Deine verknüpfte ID ist:<br />
-            <div id="ltid__" style="display:inline;" class="vHover">?</div>!<br /><br />
+            <div id="ltid__" style="display:inline;" class="vHover">?</div>!<br />
+            Dein Buch ist <div id="ltbook__" style="display:inline;" class="vHover">?</div>.<br/><br />
             <button onclick="changeLTID()" type="button" class="login_button">&Auml;ndern</button>
             <button onclick="getLTID()" type="button" class="login_button">Neu laden</button><br />
             <div id="lttext__" style="display: inline;"></div><br />
@@ -87,11 +90,11 @@
             getContent("upcomingltp");
         </script>
     </div>
-    <h2>Meine Daten</h2>
+    <h2 id="daten">Meine Daten</h2>
     <p>
         Upcoming...
     </p>
-    <h2>Rangliste</h2>
+    <h2 id="rangliste">Rangliste</h2>
     <p>
         Upcoming...
     </p>
