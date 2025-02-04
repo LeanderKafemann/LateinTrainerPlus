@@ -95,13 +95,15 @@
         <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('ltpistda')" />
         <script>getContent("ltpistda");</script>
     </div>
-    <p style="font-weight: bold; font-size: x-large; font-color: red; text-align: center;">
+    <p style="font-weight: bold; font-size: x-large; text-align: center;">
         Hinweis: Sie ben&ouml;tigen den LTP Agent (Paket f&uuml;r B&uuml;ro) f&uuml;r die folgenden Funktionen.
     </p>
     <h2 id="daten">Meine Daten</h2>
-    <div class="dataview">Name: </div><div id="ltname__" class="dataview">?</div><br/>
-    <div class="dataview">Punkte: </div><div id="ltpunkte__" class="dataview">?</div><br/>
-    <div class="dataview">Streak: </div><div id="ltstreak__" class="dataview">?</div>
+    <div style="text-align: center;">
+        <div class="dataview">Name: </div><div id="ltname__" class="dataview">?</div><br/>
+        <div class="dataview">Punkte: </div><div id="ltpunkte__" class="dataview">?</div><br/>
+        <div class="dataview">Streak: </div><div id="ltstreak__" class="dataview">?</div>
+    </div>
     <script>
         if (getCookie("username", document.cookie) != "NoNameGiven") {
             getScores();
@@ -169,7 +171,7 @@
     <br /><br /><br /><br />
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2025 - BueroWebKit 3.2.22 - LKWEB 2.14.0 - LateinTrainerPlus 1.0.3
+            Copyright Leander Kafemann 2025 - BueroWebKit 3.2.22 - LKWEB 2.14.1 - LateinTrainerPlus 1.0.4
         </p>
     </div>
 </body>
