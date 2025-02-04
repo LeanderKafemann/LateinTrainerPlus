@@ -17,7 +17,7 @@ function changeLTID() {
 
 async function changeLTIDBackground(newid, newbook) {
     let linkAdd = getCookie("username", document.cookie)+"&code="+getCookie("code", document.cookie)+"&newid="+newid+"&newbook="+newbook;
-    let response = await fetch("https://lkunited.pythonanywhere.com/ltp/setConnectedID?name="+linkadd);
+    let response = await fetch("https://lkunited.pythonanywhere.com/ltp/setConnectedID?name="+linkAdd);
     let text = await response.text();
     alert("Änderung von Server beantwortet mit:"+text);
 }
