@@ -76,46 +76,34 @@
     </script>
     <h2>Aktuelles</h2>
     <div class="oval">
-        <font color="red">
-            <h3>LTP Development</h3>
+        <font color="black">
+            <h3>LTP ist da</h3>
             <p>
                 <b>
-                    Achtung:<br />
-                    Leider haben die Betreiber des LateinTrainers Cross-Site-Origin-Anfragen momentan blockiert.<br />
+                    LateinTrainerPlus ist da!<br />
                     <br />
-                    Das bedeutet für LateinTrainerPlus,<br />
-                    dass ein Betrieb im Browser momentan nicht möglich ist.<br />
-                    <br />
-                    Wir arbeiten jedoch an einer Alternative.
+                    Genießen Sie erste Funktionen,<br />
+                    während wir an weiteren Funktionen wie Ranglisten arbeiten.
                 </b>
             </p>
         </font>
-        <div class="like" id="ltpdevelopment" style="">?</div><button onclick="setLike('ltpdevelopment')" type="button" class="likeButton">&#128151;</button>
-        <div id="ltpdevelopmentComments"></div>
-        <textarea id="ltpdevelopmentCommentText" placeholder="Kommentieren..."></textarea><br />
-        <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('ltpdevelopment')" />
-        <script>getContent("ltpdevelopment");</script>
-    </div>
-    <div class="oval">
-        <font color="black">
-            <h3>Upcoming LTP</h3>
-            <p>
-                LateinTrainerPlus ist momentan in Arbeit.<br />
-                Kommen Sie sp&auml;ter zur&uuml;ck.
-            </p>
-        </font>
-        <div class="like" id="upcomingltp" style="">?</div><button onclick="setLike('upcomingltp')" type="button" class="likeButton">&#128151;</button>
-        <div id="upcomingltpComments"></div>
-        <textarea id="upcomingltpCommentText" placeholder="Kommentieren..."></textarea><br />
-        <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('upcomingltp')" />
-        <script>
-            getContent("upcomingltp");
-        </script>
+        <div class="like" id="ltpistda" style="">?</div><button onclick="setLike('ltpistda')" type="button" class="likeButton">&#128151;</button>
+        <div id="ltpistdaComments"></div>
+        <textarea id="ltpistdaCommentText" placeholder="Kommentieren..."></textarea><br />
+        <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('ltpistda')" />
+        <script>getContent("ltpistda");</script>
     </div>
     <h2 id="daten">Meine Daten</h2>
-    <p>
-        Upcoming...
+    <p style="font-weight: bold; font-size: larger">
+        Name: <div id="ltname__" style="display: inline;">?</div><br/>
+        Punkte: <div id="ltpunkte__" style="display: inline;">?</div><br/>
+        Streak: <div id="ltstreak__" style="display: inline;">?</div>
     </p>
+    <script>
+        if (getCookie("username", document.cookie) == "NoNameGiven") {
+            getScores();
+        }
+    </script>
     <h2 id="rangliste">Rangliste</h2>
     <p>
         Upcoming...
@@ -178,7 +166,7 @@
     <br /><br /><br /><br />
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2025 - BueroWebKit 3.2.21 - LKWEB 2.13.16 - LateinTrainerPlus 1.0.0-BETA
+            Copyright Leander Kafemann 2025 - BueroWebKit 3.2.22 - LKWEB 2.14.0 - LateinTrainerPlus 1.0.0
         </p>
     </div>
 </body>
