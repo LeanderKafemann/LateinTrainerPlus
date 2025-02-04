@@ -63,7 +63,7 @@
         <p>
             Deine verknüpfte ID ist:<br />
             <div id="ltid__" style="display:inline;" class="vHover">?</div>!<br />
-            Dein Buch ist <div id="ltbook__" style="display:inline;" class="vHover">?</div>.<br/><br />
+            Dein Buch ist <div id="ltbook__" style="display:inline;" class="vHover">?</div>.<br /><br />
             <button onclick="changeLTID()" type="button" class="login_button">&Auml;ndern</button>
             <button onclick="getLTID()" type="button" class="login_button">Neu laden</button><br />
             <div id="lttext__" style="display: inline;"></div><br />
@@ -75,6 +75,27 @@
         }
     </script>
     <h2>Aktuelles</h2>
+    <div class="oval">
+        <font color="red">
+            <h3>LTP Development</h3>
+            <p>
+                <b>
+                    Achtung:<br />
+                    Leider haben die Betreiber des LateinTrainers Cross-Site-Origin-Anfragen momentan blockiert.<br />
+                    <br />
+                    Das bedeutet für LateinTrainerPlus,<br />
+                    dass ein Betrieb im Browser momentan nicht möglich ist.<br />
+                    <br />
+                    Wir arbeiten jedoch an einer Alternative.
+                </b>
+            </p>
+        </font>
+        <div class="like" id="ltpdevelopment" style="">?</div><button onclick="setLike('ltpdevelopment')" type="button" class="likeButton">&#128151;</button>
+        <div id="ltpdevelopmentComments"></div>
+        <textarea id="ltpdevelopmentCommentText" placeholder="Kommentieren..."></textarea><br />
+        <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('ltpdevelopment')" />
+        <script>getContent("ltpdevelopment");</script>
+    </div>
     <div class="oval">
         <font color="black">
             <h3>Upcoming LTP</h3>
@@ -154,7 +175,7 @@
             </details>
         </p>
     </div>
-    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br />
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
             Copyright Leander Kafemann 2025 - BueroWebKit 3.2.21 - LKWEB 2.13.16 - LateinTrainerPlus 1.0.0-BETA
