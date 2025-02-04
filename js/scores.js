@@ -1,6 +1,6 @@
 async function getScores() {
     let linkAdd = getCookie("ltid", document.cookie)+"&lehrbuch="+getCookie("ltbook", document.cookie);
-    let response = await fetch("https://latein.lernen.creativecouple.de/LateinTrainer/user/login?name=");
+    let response = await fetch("https://latein.lernen.creativecouple.de/LateinTrainer/user/login?name="+linkAdd);
     let response_text = await response.text();
     let x = "";
     let y = "";
