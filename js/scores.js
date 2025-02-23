@@ -17,3 +17,9 @@ async function getRL() {
     text = await response.text();
     document.getElementById("rListS").innerHTML = text;
 }
+
+function getRLUCheck() {
+    if (getCookie("username", document.cookie) != "NoNameGiven") {
+        getRL();
+    }
+}
