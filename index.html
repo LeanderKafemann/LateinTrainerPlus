@@ -66,6 +66,14 @@
         if (getCookie("username", document.cookie) == "NoNameGiven") {
             document.getElementById("text__").textContent = "Sie sind nicht eingeloggt!";
         }
+        if (getCookie("rearrangedMenuLTP", document.cookie) == "") {
+            setCookie("rearrangedMenuLTP", "true", 3);
+        } else if (getCookie("rearrangedMenuLTP", document.cookie) == "false") {
+            setCookie("rearrangedMenuLTP", "true", 7);
+            changeMenuPointsLTP();
+        } else {
+            console.log("MenuPoints correct");
+        }
     </script>
     <div class="oval">
         <h4>LateinTrainer-Account</h4>
@@ -136,7 +144,7 @@
         Sie können den Desktop-Agenten einfach in Büro installieren,<br />
         indem Sie den Büro Guide nutzen oder den folgenden Link betätigen:<br /><br/>
         <img src="https://leanderkafemann.github.io/bueroWebsite/images/LTP.png" class="photoElement" /><br />
-        <a href="https://leanderkafemann.github.io/bueroWebsite/data/ltp1.0.3.zip">LTP Agent 1.0.3</a>
+        <a href="https://leanderkafemann.github.io/bueroWebsite/data/ltp1.0.4.zip">LTP Agent 1.0.4</a>
     </p>
     <div style="display: block;">
         <h2 id="weblinks">Weblinks</h2>
@@ -196,7 +204,7 @@
     <br /><br /><br /><br />
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2025 - BueroWebKit 3.3.2 - LKWEB 2.14.4 - LateinTrainerPlus 1.1.9
+            Copyright Leander Kafemann 2025 - BueroWebKit 3.3.6 - LKWEB 2.14.7 - LateinTrainerPlus 1.1.10
         </p>
     </div>
 </body>
