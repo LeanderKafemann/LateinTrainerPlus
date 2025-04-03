@@ -25,7 +25,7 @@ async function changeLTIDBackground(newid, newbook) {
 }
 
 async function getLTID() {
-    let response = await fetch("https://lkunited.pythonanywhere.com/ltp/getConnectedID?name="+getCookie("username", document.cookie)+"&code="+getCookie("code", document.cookie));
+    let response = await fetch("https://lkunited.pythonanywhere.com/ltp/getConnectedID?desktop=false&name="+getCookie("username", document.cookie)+"&code="+getCookie("code", document.cookie));
     let text = await response.text();
     if (text != "Authentification failed") {
         document.getElementById("ltid__").textContent = text.split("#*#")[0];
