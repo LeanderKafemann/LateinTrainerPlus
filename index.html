@@ -80,6 +80,23 @@
         }
     </script>
     <div class="oval">
+        <h4>LateinTrainer-Account</h4>
+        <p>
+            Deine verknüpfte ID ist:<br />
+            <div id="ltid__" style="display:inline;" class="vHover">?</div>!<br />
+            Dein Buch ist <div id="ltbook__" style="display:inline;" class="vHover">?</div>.<br /><br />
+            <button onclick="changeLTID()" type="button" class="login_button">&Auml;ndern</button>
+            <button onclick="getLTID()" type="button" class="login_button">Neu laden</button><br />
+            <div id="lttext__" style="display: inline;"></div><br />
+        </p>
+    </div>
+    <script>
+        if (getCookie("username", document.cookie) != "NoNameGiven") {
+            getLTID();
+        }
+    </script>
+    <h2>Aktuelles</h2>
+    <div class="oval">
         <font color="black">
             <h3>BueroWebKit 4</h3>
             <p class="announcement">
@@ -97,23 +114,6 @@
             getContent("buerowebkit4");
         </script>
     </div>
-    <div class="oval">
-        <h4>LateinTrainer-Account</h4>
-        <p>
-            Deine verknüpfte ID ist:<br />
-            <div id="ltid__" style="display:inline;" class="vHover">?</div>!<br />
-            Dein Buch ist <div id="ltbook__" style="display:inline;" class="vHover">?</div>.<br /><br />
-            <button onclick="changeLTID()" type="button" class="login_button">&Auml;ndern</button>
-            <button onclick="getLTID()" type="button" class="login_button">Neu laden</button><br />
-            <div id="lttext__" style="display: inline;"></div><br />
-        </p>
-    </div>
-    <script>
-        if (getCookie("username", document.cookie) != "NoNameGiven") {
-            getLTID();
-        }
-    </script>
-    <h2>Aktuelles</h2>
     <div class="oval">
         <font color="red">
             <h3>LTP Agent 1.0.7</h3>
@@ -264,7 +264,7 @@
     <br /><br /><br /><br />
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2025 - BueroWebKit 4.0.0 - LKWEB 2.15.5 - bueroWebsite 3.3.21 - LateinTrainerPlus 1.1.16
+            Copyright Leander Kafemann 2025 - BueroWebKit 4.0.0 - LKWEB 2.15.5 - bueroWebsite 3.3.21 - LateinTrainerPlus 1.1.17
         </p>
     </div>
 </body>
