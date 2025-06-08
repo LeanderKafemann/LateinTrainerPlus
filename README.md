@@ -1,3 +1,3 @@
 # LateinTrainerPlus
-Extra Functions for LateinTrainer (by CreativeCouple)
-Only abailable for Büro users.
+Extra Functions for LateinTrainer (by @CreativeCouple).<br/>
+Only abailable for Buero users.

@@ -33,7 +33,7 @@
     <div class="navbar">
         <nav style="float: left;">
             <ul>
-                <li style="margin: 0;"><a href="#" style="padding: 0;"><img src="./images/logoLTP.png" alt="logo" /></a></li>
+                <li style="margin: 0;"><a href="#" style="padding: 0;"><img src="./images/logoLTP.png" alt="logo" class="navBarImage" /></a></li>
                 <li style="margin-left: 3px;"><button onclick="changeMenuPointsLTP()" type="button" id="buttonSwitchMP" class="buttonSwitchMP">Texte</button></li>
             </ul>
         </nav>
@@ -80,6 +80,24 @@
         }
     </script>
     <div class="oval">
+        <font color="black">
+            <h3>BueroWebKit 4</h3>
+            <p class="announcement">
+                Die große neue Version des BueroWebKit wird jetzt auch von LateinTrainerPlus verwendet.<br />
+                <br />
+                Erleben Sie auch hier das neue,<br />
+                moderne Styling mit glasigen Schatten-Effekten!
+            </p>
+        </font>
+        <div class="like" id="buerowebkit4" style="">?</div><button onclick="setLike('buerowebkit4')" type="button" class="likeButton">&#128151;</button>
+        <div id="buerowebkit4Comments"></div>
+        <textarea id="buerowebkit4CommentText" placeholder="Kommentieren..."></textarea><br />
+        <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('buerowebkit4')" />
+        <script>
+            getContent("buerowebkit4");
+        </script>
+    </div>
+    <div class="oval">
         <h4>LateinTrainer-Account</h4>
         <p>
             Deine verknüpfte ID ist:<br />
@@ -99,7 +117,7 @@
     <div class="oval">
         <font color="red">
             <h3>LTP Agent 1.0.7</h3>
-            <p>
+            <p class="announcement">
                 <b>
                     Achtung:<br />
                     die neue Version von LKWEB unterstützt nur LTP Agenten 1.0.7 oder höher.<br />
@@ -117,7 +135,7 @@
     <div class="oval">
         <font color="black">
             <h3>LTP-Umfrage</h3>
-            <p>
+            <p class="announcement">
                 <b>
                     LTP ist seit einiger Zeit online und die Entwicklung der grundsätzlichen Funktionen ist abgeschlossen.<br />
                     <br />
@@ -185,7 +203,7 @@
         um Ihren Punktestand auf unseren Servern zu registrieren.<br /><br />
         Sie können den Desktop-Agenten einfach in Büro installieren,<br />
         indem Sie den Büro Guide nutzen oder den folgenden Link betätigen:<br /><br />
-        <img src="https://leanderkafemann.github.io/bueroWebsite/images/LTP.png" class="photoElement" /><br />
+        <img src="https://buero-os-toolkit-development.github.io/bueroWebsite/images/LTP.png" class="photoElement" /><br />
         <a href="https://buero-os-toolkit-development.github.io/bueroWebsite/data/ltp1.0.7.zip">LTP Agent 1.0.7</a>
     </p>
     <div style="display: block;">
@@ -246,7 +264,7 @@
     <br /><br /><br /><br />
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2025 - BueroWebKit 3.3.18 - LKWEB 2.15.4 - LateinTrainerPlus 1.1.15
+            Copyright Leander Kafemann 2025 - BueroWebKit 4.0.0 - LKWEB 2.15.5 - bueroWebsite 3.3.21 - LateinTrainerPlus 1.1.16
         </p>
     </div>
 </body>
