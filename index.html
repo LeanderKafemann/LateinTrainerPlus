@@ -152,25 +152,6 @@
         <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('ltp-umfrage')" />
         <script>getContent("ltp-umfrage");</script>
     </div>
-    <div class="oval">
-        <font color="black">
-            <h3>LTP ist da</h3>
-            <p>
-                <b>
-                    LateinTrainerPlus ist da!<br />
-                    <br />
-                    Genießen Sie erste Funktionen,<br />
-                    während wir an weiteren Funktionen wie Ranglisten arbeiten.<br /><br />
-                    Beachten Sie, dass Sie den DesktopAgenten ben&ouml;tigen (s. B&uuml;ro-der Guide).
-                </b>
-            </p>
-        </font>
-        <div class="like" id="ltpistda" style="">?</div><button onclick="setLike('ltpistda')" type="button" class="likeButton">&#128151;</button>
-        <div id="ltpistdaComments"></div>
-        <textarea id="ltpistdaCommentText" placeholder="Kommentieren..."></textarea><br />
-        <input type="submit" class="login_button" value="Kommentar senden" onclick="comment('ltpistda')" />
-        <script>getContent("ltpistda");</script>
-    </div>
     <p style="font-weight: bold; font-size: x-large; text-align: center;">
         Hinweis: Sie ben&ouml;tigen den LTP Agent (Paket f&uuml;r B&uuml;ro) f&uuml;r die folgenden Funktionen.
     </p>
@@ -264,7 +245,11 @@
     <br /><br /><br /><br />
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2025 - BueroWebKit 4.0.0 - LKWEB 2.15.5 - bueroWebsite 3.3.21 - LateinTrainerPlus 1.1.17
+            Copyright Leander Kafemann 2025 - BueroWebKit 4.1.0 - LKWEB <div id="LKWEBversionText">
+                Version wird geladen...
+            </div>
+            <script src="https://buero-os-toolkit-development.github.io/LKWEB-Backend/getVersion/getVersion.js"></script>
+            -  LateinTrainerPlus 1.1.18
         </p>
     </div>
 </body>
