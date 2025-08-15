@@ -22,6 +22,7 @@
     <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/comment.js"></script>
     <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/time.js"></script>
     <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/BueroWebKit/js/menu.js"></script>
+    <script type="text/javascript" src="https://buero-os-toolkit-development.github.io/LKWEB-Backend/getVersion/getVersion.js"></script>
     <script type="text/javascript" src="./js/ltid.js"></script>
     <script type="text/javascript" src="./js/scores.js"></script>
     <script type="text/javascript" src="./js/menu.js"></script>
@@ -245,12 +246,14 @@
     <br /><br /><br /><br />
     <div class="footer" id="footer" style="text-align: center;">
         <p class="footerText">
-            Copyright Leander Kafemann 2025 - BueroWebKit 4.1.0 - LKWEB <div id="LKWEBversionText">
+            Copyright Leander Kafemann 2025 - BueroWebKit 4.1.0 - LKWEB <element id="LKWEBversionText">
                 Version wird geladen...
-            </div>
-            <script src="https://buero-os-toolkit-development.github.io/LKWEB-Backend/getVersion/getVersion.js"></script>
-            -  LateinTrainerPlus 1.1.18
+            </element>
+            -  LateinTrainerPlus 1.1.19
         </p>
+        <script>
+            getVersionLKWEBAgent();
+        </script>
     </div>
 </body>
 </html>
